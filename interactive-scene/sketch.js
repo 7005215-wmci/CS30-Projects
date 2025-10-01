@@ -9,10 +9,14 @@
 let shape = true;
 let size = 10;
 let colors = "black";
+let xm = 500;
+let xy = 200;
+
+
 
 function setup() {
-  createCanvas(windowWidth,windowHeight);
-  background("white");
+  createCanvas(500, 700);
+  background("gray");
 }
 
 function draw() {
@@ -21,8 +25,20 @@ function draw() {
 }
 
 function mouseDragged() {
+  canDraw();
+}
+
+function mouseClicked(){
+  
+  
+  
+  
+  canDraw();
+}
+
+function canDraw(){
   if (shape === true){
-    square(mouseX, mouseY, size);
+    square(mouseX - size/2, mouseY - size/2, size);
   }
 
   else {
@@ -31,9 +47,10 @@ function mouseDragged() {
   
 }
 
+
 function keyPressed(){
   if (key === "r"){
-    background("white");
+    background("gray");
   }
   
   else if (key === "q"){
@@ -63,6 +80,10 @@ function keyPressed(){
     
     else if (colors === "green") {
       colors = "yellow";
+    }
+
+    else if (colors === "yellow"){
+      colors = "white";
     }
     
     else {
