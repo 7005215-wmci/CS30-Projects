@@ -7,6 +7,7 @@
 
 
 // Creates the State Variables
+// Creates the State Variables
 let shape = true;
 let size = 10;
 let colors = "black";
@@ -29,7 +30,7 @@ function draw() {
 // Detects if the Mouse is clicker or dragged in an area it shouldn't be, if so it does not allow it to draw.
 
 function mouseDragged() {
-  if (mouseY < 100  + size/2) {
+  if (mouseY < 70  + size/2) {
     safe = false;
   }
  
@@ -41,17 +42,43 @@ function mouseDragged() {
 }
 
 function mouseClicked(){
-  if (mouseY < 100  + size/2) {
+  if (mouseY < 70  + size/2) {
     safe = false;
   }
- 
+  
   else {
     safe = true;
   }
   canDraw();
+  
+  if (mouseX > 10 && mouseX < 40 && mouseY > 10 && mouseY < 40) {
+    if (colors === "black"){
+      colors = "blue";
+    }
+    
+    else if (colors === "blue") {
+      colors = "red";
+    }
+    
+    else if (colors === "red"){
+      colors = "green";
+    }
+    
+    else if (colors === "green") {
+      colors = "yellow";
+    }
+
+    else if (colors === "yellow"){
+      colors = "white";
+    }
+    
+    else {
+      colors = "black";
+    }
+    fill(colors);
+    square(10, 10, 30);
+  }
 }
-
-
 function canDraw(){
   if (safe === true) {
     if (shape === true){
@@ -78,6 +105,8 @@ function keyPressed(){
   
   else if (key === "e") {
     size = size + 10;
+    if (size > 80) {
+      size = 80;
   }
   
   else if (key === "w") {
@@ -112,6 +141,8 @@ function keyPressed(){
     else {
       colors = "black";
     }
+    fill(colors);
+    square(10, 10, 30);
   }
 }
 
@@ -119,5 +150,9 @@ function keyPressed(){
 
 function createMenu(){
   fill("black");
-  rect(0, 90, 500, 10);
+  rect(0, 60, 500, 10);
+  fill(colors);
+  square(10,10,30);
+  fill("white");
+  square(60, 10, 30);
 }
