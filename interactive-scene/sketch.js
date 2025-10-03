@@ -7,7 +7,6 @@
 
 
 // Creates the State Variables
-// Creates the State Variables
 let shape = true;
 let size = 10;
 let colors = "black";
@@ -17,8 +16,8 @@ let safe = true;
 // Prepares the Application's GUI.
 
 function setup() {
-  createCanvas(500, 700);
-  background("gray");
+  createCanvas(windowWidth, windowHeight);
+  background("white");
   createMenu();
 }
 
@@ -76,11 +75,13 @@ function mouseClicked(){
       colors = "black";
     }
     fill(colors);
+    stroke("black");
     square(10, 10, 30);
   }
 }
 function canDraw(){
   if (safe === true) {
+    noStroke();
     if (shape === true){
       square(mouseX - size/2, mouseY - size/2, size);
     }
@@ -95,7 +96,7 @@ function canDraw(){
 
 function keyPressed(){
   if (key === "r"){
-    background("gray");
+    background("white");
     createMenu();
   }
   
@@ -105,8 +106,9 @@ function keyPressed(){
   
   else if (key === "e") {
     size = size + 10;
-    if (size > 80) {
+    if (size > 80){
       size = 80;
+    }
   }
   
   else if (key === "w") {
@@ -142,15 +144,16 @@ function keyPressed(){
       colors = "black";
     }
     fill(colors);
-    square(10, 10, 30);
+    square(10,10,30);
   }
 }
 
 // These Next functions will create the border and GUI the user can interact with.
 
 function createMenu(){
+  stroke("black");
   fill("black");
-  rect(0, 60, 500, 10);
+  rect(0, 60, windowWidth, 10);
   fill(colors);
   square(10,10,30);
   fill("white");
