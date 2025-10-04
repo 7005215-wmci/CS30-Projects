@@ -3,7 +3,10 @@
 // 9/29/2025
 //
 // Extra for Experts:
-// - describe what you did to take this project "above and beyond"
+// Tried working with Mutiple state Variables. Ran out of time to create a
+// Refresh button and Size buttons. To increase Size press E, to decrease
+// Press W. To Refresh press R. To Change color via hotkey Press T. To 
+// Change Shapes via Hotkey press Q.
 
 
 // Creates the State Variables
@@ -78,6 +81,9 @@ function mouseClicked(){
     stroke("black");
     square(10, 10, 30);
   }
+  else if (mouseX > 60 && mouseX < 90 && mouseY > 10 && mouseY < 40){
+    shapeChanged();
+  }
 }
 function canDraw(){
   if (safe === true) {
@@ -101,7 +107,7 @@ function keyPressed(){
   }
   
   else if (key === "q"){
-    shape = !shape;
+    shapeChanged()
   }
   
   else if (key === "e") {
@@ -158,4 +164,25 @@ function createMenu(){
   square(10,10,30);
   fill("white");
   square(60, 10, 30);
+  if (shape === true) {
+      fill("black");
+      square(70, 20, 10);
+    }
+    else {
+      fill("black");
+      circle(75,25,20);
+    }
+}
+function shapeChanged() {
+  shape = !shape;
+  fill("white");
+  square(60, 10, 30);
+  if (shape === true) {
+      fill("black");
+      square(70, 20, 10);
+    }
+    else {
+      fill("black");
+      circle(75,25,20);
+    }
 }
