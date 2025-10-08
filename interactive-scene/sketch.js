@@ -107,7 +107,7 @@ function keyPressed(){
   }
   
   else if (key === "q"){
-    shapeChanged()
+    shapeChanged();
   }
   
   else if (key === "e") {
