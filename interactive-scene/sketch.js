@@ -165,24 +165,24 @@ function createMenu(){
   fill("white");
   square(60, 10, 30);
   if (shape === true) {
-      fill("black");
-      square(70, 20, 10);
-    }
-    else {
-      fill("black");
-      circle(75,25,20);
-    }
+    fill("black");
+    square(70, 20, 10);
+  }
+  else {
+    fill("black");
+    circle(75,25,20);
+  }
 }
 function shapeChanged() {
   shape = !shape;
   fill("white");
   square(60, 10, 30);
   if (shape === true) {
-      fill("black");
-      square(70, 20, 10);
-    }
-    else {
-      fill("black");
-      circle(75,25,20);
-    }
+    fill("black");
+    square(70, 20, 10);
+  }
+  else {
+    fill("black");
+    circle(75,25,20);
+  }
 }
