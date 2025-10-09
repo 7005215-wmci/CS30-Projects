@@ -5,4 +5,5 @@
 ## Assignment
 - [Interacitve Scene](interactive-scene)
 - [Bouncing Ball](bouncing-ball)
+- [Generative Art](generative-art)
 
