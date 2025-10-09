@@ -42,6 +42,5 @@ function spawmTile(x, y) {
       y2: y + tileSize/2,
 
     };
-    return(tile);
   }
 } 
