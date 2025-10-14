@@ -1,9 +1,9 @@
 # CS 30 Work
 
 ## CS Demos
--i'll put demos here later
-## Assignment
-- [Interacitve Scene](interactive-scene)
 - [Bouncing Ball](bouncing-ball)
 - [Generative Art](generative-art)
-
+- [Noise](noise)
+## Assignment
+- [Interacitve Scene](interactive-scene)
+- [Array Project](array-project)
