@@ -4,6 +4,7 @@
 - [Bouncing Ball](bouncing-ball)
 - [Generative Art](generative-art)
 - [Noise](noise)
+- [Perlin Bubbles](perlin-bubbles)
 ## Assignment
 - [Interacitve Scene](interactive-scene)
 - [Array Project](array-project)
