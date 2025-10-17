@@ -14,7 +14,7 @@ function setup() {
 }
 
 function draw() {
-  background(220);
+  background(34, 139, 34);
   if(keyIsDown(87) === true){
     y -= 5;
   }
@@ -30,5 +30,6 @@ function draw() {
   if(keyIsDown(68) === true){
     x += 5;
   }
+  fill("black");
   square(x, y , 50);
 }
