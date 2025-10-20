@@ -7,7 +7,15 @@
 
 let x = 0;
 let y = 0;
-
+let oldY;
+let oldX;
+let pStats = {
+  speed: 5,
+  color: "black",
+  wood: 0,
+  rock: 0,
+  direction: "north",
+};
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -16,20 +24,32 @@ function setup() {
 function draw() {
   background(34, 139, 34);
   if(keyIsDown(87) === true){
-    y -= 5;
+    oldY= y;
+    y -= pStats.speed;
+    pStats.direction = "north";
   }
   
   if(keyIsDown(83) === true){
-    y += 5;
+    oldY= y;
+    y += pStats.speed;
+    pStats.direction = "south";
   }
 
   if(keyIsDown(65) === true){
-    x -= 5;
+    oldX = x;
+    x -= pStats.speed;
+    pStats.direction = "west";
   }
 
   if(keyIsDown(68) === true){
-    x += 5;
+    oldX =x;
+    x += pStats.speed;
+    pStats.direction = "east";
   }
   fill("black");
+  if(x < 0 || y < 0 || x > windowWidth -45|| y > windowHeight -45) {
+    x = oldX;
+    y = oldY;
+  }
   square(x, y , 50);
 }
