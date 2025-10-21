@@ -12,17 +12,19 @@ let oldX;
 let pStats = {
   speed: 5,
   color: "black",
-  wood: 0,
-  rock: 0,
   direction: "north",
+
 };
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(500, 500);
+  noStroke();
 }
 
 function draw() {
   background(34, 139, 34);
+  fill( '#857F7B' );
+  square(300, 300, 200);
   if(keyIsDown(87) === true){
     oldY= y;
     y -= pStats.speed;
@@ -47,9 +49,9 @@ function draw() {
     pStats.direction = "east";
   }
   fill("black");
-  if(x < 0 || y < 0 || x > windowWidth -45|| y > windowHeight -45) {
+  if(x < 0 || y < 0 || x > 450|| y > 450) {
     x = oldX;
     y = oldY;
   }
-  square(x, y , 50);
+  square(x ,y , 50);
 }
