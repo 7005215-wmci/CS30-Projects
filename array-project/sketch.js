@@ -7,8 +7,8 @@
 
 let x = 100;
 let y = 100;
-let oldY;
-let oldX;
+let oldY = y;
+let oldX = x;
 let pStats = {
   speed: 5,
   color: "black",
@@ -24,15 +24,12 @@ function setup() {
 }
 
 function draw() {
-  if (x > 275 && y > 275){
-    pStats.tSpeed = 0.4;
-  }
-  else {
-    pStats.tSpeed = 1;
-  }
+  checkTerra();
   background(34, 139, 34);
   fill( '#857F7B' );
   square(300, 300, 200);
+  fill("blue");
+  rect(100, 0, 70, 500);
   if(keyIsDown(87) === true){
     oldY= y;
     y -= pStats.speed * pStats.tSpeed;
@@ -67,4 +64,20 @@ function movement() {
   }
   square(x - 25 ,y - 25 , 50);
   console.log(pStats.direction);
+}
+
+function checkTerra() {
+  if (x > 275 && y > 275){
+    pStats.tSpeed = 0.4;
+  }
+  else if (x > 100 && x < 170 ) {
+    pStats.tSpeed = 0.5;
+    if (y < 472){
+      y = y + 5;
+      oldY = y;
+    }
+  }
+  else {
+    pStats.tSpeed = 1;
+  }
 }
