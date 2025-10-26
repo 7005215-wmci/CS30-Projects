@@ -1,9 +1,9 @@
-// Project Title
-// Your Name
-// Date
+// Terrain Testing
+// Kalim Pugh
+// 26/10/2025
 //
 // Extra for Experts:
-// - describe what you did to take this project "above and beyond"
+// - None
 
 let x = 100;
 let y = 100;
