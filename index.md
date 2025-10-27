@@ -5,6 +5,7 @@
 - [Generative Art](generative-art)
 - [Noise](noise)
 - [Perlin Bubbles](perlin-bubbles)
+- [Grid Demo](demo)
 ## Assignment
 - [Interacitve Scene](interactive-scene)
 - [Array Project](array-project)
