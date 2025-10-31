@@ -2,10 +2,7 @@
 
 //Learning 2d arrays
 
-let theGrid = [[1, 0, 1, 0],
-               [0, 0, 1, 1],
-               [1, 1, 0, 0],
-               [0, 1, 0, 1]];
+let theGrid = [[1, 0, 1, 0],[0, 0, 1, 1],[1, 1, 0, 0],[0, 1, 0, 1]];
 
 let cellSize;
 const SQUARE_DIMENSIONS = theGrid.length;
