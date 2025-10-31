@@ -1,14 +1,15 @@
 // Game Of Life
 
-const CELL_SIZE = 20;
+const CELL_SIZE = 270;
 const RENDER_ON_FRAME = 5;
+const PLAYER = 9;
 let grid;
 let rows;
 let cols;
 let autoPlayIsOn = false;
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth * 0.9, windowHeight * 0.9);
   cols = Math.floor(width/CELL_SIZE);
   rows = Math.floor(height/CELL_SIZE);
   grid = generateRandomGrid(cols, rows);
