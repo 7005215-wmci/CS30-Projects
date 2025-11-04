@@ -10,4 +10,4 @@
 ## Assignment
 - [Interacitve Scene](interactive-scene)
 - [Array Project](array-project)
-- [Grid Project](thegrid)
+- [Grid Project](gridproject)
