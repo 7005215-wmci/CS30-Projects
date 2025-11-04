@@ -6,6 +6,8 @@
 - [Noise](noise)
 - [Perlin Bubbles](perlin-bubbles)
 - [Grid Demo](demo)
+- [Character Demo](character)
 ## Assignment
 - [Interacitve Scene](interactive-scene)
 - [Array Project](array-project)
+- [Grid Project](thegrid)
