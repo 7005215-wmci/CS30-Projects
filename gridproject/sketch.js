@@ -24,6 +24,7 @@ function setup() {
 function draw(){
   background(220);
   generateMap();
+  move();
 }
 
 function generateMap(){
@@ -58,6 +59,17 @@ function keyPressed(){
     theGrid[0] = theGrid[0] - 1;
   }
   else if (key === 's') {
-    theGrid[0] === theGrid[0] + 1;
+    theGrid[0] = theGrid[0] + 1;
   }
+}
+function move(){
+
+  if (time > movetime*timesMoved) {
+    let movetime = 3000;
+    let time = millis();
+    let timesMoved = 1;
+    theGrid[1] = theGrid[1] + 1;
+    timesMoved = timesMoved + 1;
+  }
+
 }
