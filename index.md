@@ -7,6 +7,7 @@
 - [Perlin Bubbles](perlin-bubbles)
 - [Grid Demo](demo)
 - [Character Demo](character)
+- [FireWorks OOP](14-fireworks)
 ## Assignment
 - [Interacitve Scene](interactive-scene)
 - [Array Project](array-project)
