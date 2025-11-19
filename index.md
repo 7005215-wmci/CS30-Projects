@@ -8,6 +8,7 @@
 - [Grid Demo](demo)
 - [Character Demo](character)
 - [FireWorks OOP](14-fireworks)
+- [Shape Inheritance](shape-inheritance)
 ## Assignment
 - [Interacitve Scene](interactive-scene)
 - [Array Project](array-project)
